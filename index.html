@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Academic Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #f4f4f4;
+      padding: 2rem 1rem;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      position: fixed;
+    }
+    .sidebar img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+    .sidebar nav a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    .sidebar nav a:hover {
+      text-decoration: underline;
+    }
+    .main-content {
+      margin-left: 240px;
+      padding: 2rem;
+      max-width: 800px;
+    }
+    h1, h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.2rem;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #0055aa;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    .contact li {
+      float: left;
+      width: 108px;
+    }
+    ol.reversed-brackets {
+      list-style: none;
+      padding-left: 1.3rem;
+    }
+    ol.reversed-brackets > li {
+      margin-bottom: 0.4rem;
+      display: grid;
+      grid-template-columns: 1.6em auto;
+      gap: 0.5em;
+    }
+    ol.reversed-brackets > li::before {
+      content: attr(data-number);
+      font-weight: bold;
+    }
+    ol.reversed-brackets > li span {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <img src="yourphoto.jpg" alt="Your Photo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Awards</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <h1 id="about">Saiqin Xu 徐赛琴</h1>
+    <p><strong>Position:</strong> PhD. Student </p>
+    <p><strong>Affiliation:</strong> Xidian University, National Key Laboratory of Radar Signal Processing</p>
+    <p><strong>Email:</strong> xusaiqin@stu.xidian.edu.cn</p>
+    <p><strong>Research Interests:</strong> Radar Signal Processing, DOA Estimation, Deep Learning, Physical Layer Security, Secure Communications</p>
+
+    <h2 id="publications">Publications</h2>
+
+    <h3>Journal Papers</h3>
+    <ol class="reversed-brackets" id="journal-list">
+      <li><span><em>Shuai Peng, Baixiao Chen, <b>Saiqin Xu</b></em>.<strong> Gridless 2D DOA Estimation for Sparse Planar Arrays via 2-level Toeplitz Reconstruction</strong>. Signal Processing, 2025.[<a href="#">PDF</a>]</span></li>
+      <li><span><em>Simone Soderi, Alessandro Brighente,<b>Saiqin Xu</b>,Mauro Conti.</em><strong>Multi-RIS Aided VLC Physical Layer Security for 6G Wireless Networks.</strong> IEEE Transactions on Mobile Computing. 2024. [<a href="#">PDF</a>]</span></li>
+      <li><span><em><b></b>Saiqin Xu</b>, Shuai Peng, Baixiao Chen, Alessandro Brighente.</em><strong> Detecting Jamming Signal using 2D Direction of Arrival Estimation Technique.</strong> IEEE Communications Letters. 2024. [<a href="#">PDF</a>]</span></li>
+      <li><span><em><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti.</em><strong> A Generative Approach to Mitigate Jamming Attacks in DOA Estimation. </strong> IEEE Wireless Communications Letters, 2024. [<a href="#">PDF</a>]</span></li>
+      <li><span>Hao Lian, Minglei Yang, <b>Saiqin Xu</b>, Dingsen Zhou, Meng Liu. <strong> Time Reversal Detection for Moving Targets in Clutter Environments.</strong> Remote Sensing, 2023.[<a href="#">PDF</a>]</span></li>
+      <li><span><em><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti, et al.</em><strong> Deep Neural Networks for Direction of Arrival Estimation of Multiple Targets with Sparse Prior for Line-of-Sight Scenario. </strong>IEEE Transactions on Vehicular Technology, 2023. [<a href="#">PDF</a>]</span></li>
+      <li><span><em><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti, et al.</em><strong> A Low Computational Complexity DOA Estimation using Sum/Difference Pattern based on DNN. </strong>Multidimensional Systems and Signal Processing, 2023. [<a href="#">PDF</a>]</span></li>
+      <li><span><em><b> Saiqin Xu</b>,Baixiao Chen, Houhong Xiang. </em><strong>Direction of Arrival Estimation using Estimator Banks in Low angle Tracking for S band Radar. </strong>Microwave and Optical Technology Letters, 2021. [<a href="#">PDF</a>]</span></li>
+      <li><span><em> Houhong Xiang, Baixiao Chen, Minglei Yang, <b> Saiqin Xu</b>, Zhengjie Li. </em><strong> Improved direction-of-arrival estimation method based on LSTM neural networks with robustness to array imperfections.</strong> Applied Intelligence, 2021. [<a href="#">PDF</a>]</span></li>
+      <li><span><em> Houhong Xiang, Baixiao Chen, Minglei Yang, <b> Saiqin Xu</b>.</em><strong>  Angle separation learning for coherent DOA estimation with deep sparse prior.</strong> IEEE Communications Letters. [<a href="#">PDF</a>]</span></li>
+    </ol>
+
+
+
+    <h3>Conference Papers</h3>
+    <ol class="reversed-brackets" id="conference-list">
+      <li><span><em> <b> Saiqin Xu</b>, Baixiao Chen, Jiankang Chen, Yu Chen. </em><strong>Enhanced Two-Dimensional Direction of Arrival Estimation via Extended Connection Matrix.</strong> 2025 8th International Conference on Electronics Technology (ICET), Chengdu, China, 2025. </span></li>
+      <li><span><em>Alessandro Brighente,<b> Saiqin Xu</b>, Simone Soderi, Mauro Conti.</em><strong>Physical Layer Authentication for Distributed RIS (DRIS) Enabled VLC Systems. </strong>IEEE International Conference on Communications(ICC). Denver, Co, USA, 2024.</span> </li>
+      <li><span><em> Zheming Guo, Baixiao Chen, <b> Saiqin Xu</b>, Hao Lian. </em><strong>A modified genetic algorithm based on the monarch scheme for thinned planar array synthesis.</strong> 2023 IET International Radar Conference (IRC), Chongqing, China, 2023.</span></li>
+      <li><span><em><b> Saiqin Xu</b>, Baixiao Chen, Hao Lian, Zheming Guo. </em><strong>Deep Learning based Direction of Arrival Estimation of Multiple Targets.</strong> 2022 IEEE 5th International Conference on Electronic Information and Communication Technology (ICEIC), Hefei, China, 2022.</span> </li>
+      <li><span><em><b> Saiqin Xu</b>, Baixiao Chen, Xiaoying Chen, Houhong Xiang.</em><strong> A Beamspace Dimension Reduction Technique with Application to DOA Estimation in Low-angle Tracking.</strong> 2021 CIE International Conference on Radar (CIE Radar), Haikou, China, 2021. </span></li>
+    </ol>
+
+    <h2 id="projects">Projects</h2>
+    <ul>
+      <li><strong>国家自然科学基金面上项目:</strong> 复杂阵地下基于深度神经网络的环境感知及米波雷达测高方法研究, 2020.1-2023.12, 参与, 负责整个项目方案设计与论证。</li>
+      <li><strong>中国船舶重工集团第724研究所项目:</strong> 自适应杂波抑制和超分辨低空测角技术研究, 2020.7-2022.10,参与, 负责算法设计与仿真, 实测数据分析。</li>
+      <li><strong>中央高校基本科研业务费专项资金项目、西安电子科技大学研究生创新基金项目:</strong> 基于深度学习的米波雷达DOA估计方法研究, 2022.5-2022.12,主持, 负责项目申请，策划和结题。</li>
+      
+    </ul>
+
+    <h2 id="education">Education</h2>
+    <ul>
+      <li>
+        PhD. in Information and Communication Engineering, Xidian University, 2019–2025
+      </li>
+      <li>
+        Visting PhD. in Computer Science, Padua University, Italy, 2022–2024
+      </li>
+      <li>
+        B.S. in Computer Science, Anhui Normal University, 2015–2019
+      </li>
+    </ul>
+
+    <h2 id="awards">Awards</h2>
+    <ul>
+      <li>China Scholarship Council (CSC), 2022~2024</li>
+    </ul>
+
+    <div class="contact ">
+      <p><strong>Links:</strong></p>
+      <ul>
+        <li><a href="https://scholar.google.com/citations?user=Oz1xHTIAAAAJ&hl=zh-CN" target="_blank">Google Scholar       </a></li>  
+        <li><a href="https://www.researchgate.net/profile/Saiqin-Xu" target="_blank">ResearchGate</a></li>
+      </ul>
+    </div>
+
+    <script>
+      function applyReversedBrackets(listId) {
+        const list = document.getElementById(listId);
+        const items = list.querySelectorAll('li');
+        const total = items.length;
+        items.forEach((item, index) => {
+          const num = total - index;
+          item.innerHTML = `[${num}] ` + item.innerHTML;
+        });
+      }
+      applyReversedBrackets('journal-list');
+      applyReversedBrackets('conference-list');
+    </script>
+
+  
+  </div>
+</body>
+</html>
