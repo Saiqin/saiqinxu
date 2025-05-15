@@ -14,12 +14,14 @@
       display: flex;
     }
     .sidebar {
-      width: 220px;
+      width: 20%;
       background-color: #f4f4f4;
       padding: 2rem 1rem;
       height: 100vh;
       box-shadow: 2px 0 5px rgba(0,0,0,0.1);
       position: fixed;
+      min-width: 100px;
+      max-width: 260px;
     }
     .sidebar img {
       width: 100%;
@@ -31,13 +33,13 @@
       color: #333;
       text-decoration: none;
       margin-bottom: 1rem;
-      font-size: 1.3rem;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
     }
     .sidebar nav a:hover {
       text-decoration: underline;
     }
     .main-content {
-      margin-left: 240px;
+      margin-left: 22%;
       padding: 2rem;
       max-width: 800px;
     }
@@ -74,12 +76,13 @@
     ol.reversed-brackets > li {
       margin-bottom: 0.4rem;
       display: grid;
-      grid-template-columns: 1.6em auto;
+      grid-template-columns: 1.9em 1fr;
       gap: 0.5em;
+      align-items: start;
     }
     ol.reversed-brackets > li::before {
       content: attr(data-number);
-      font-weight: bold;
+      font-weight: none;
     }
     ol.reversed-brackets > li span {
       display: block;
@@ -109,27 +112,27 @@
 
     <h3>Journal Papers</h3>
     <ol class="reversed-brackets" id="journal-list">
-      <li><span><em>Shuai Peng, Baixiao Chen, <b>Saiqin Xu</b></em>.<strong> Gridless 2D DOA Estimation for Sparse Planar Arrays via 2-level Toeplitz Reconstruction</strong>. Signal Processing, 2025.[<a href="#">PDF</a>]</span></li>
-      <li><span><em>Simone Soderi, Alessandro Brighente,<b>Saiqin Xu</b>,Mauro Conti.</em><strong>Multi-RIS Aided VLC Physical Layer Security for 6G Wireless Networks.</strong> IEEE Transactions on Mobile Computing. 2024. [<a href="#">PDF</a>]</span></li>
-      <li><span><em><b>Saiqin Xu</b>, Shuai Peng, Baixiao Chen, Alessandro Brighente.</em><strong> Detecting Jamming Signal using 2D Direction of Arrival Estimation Technique.</strong> IEEE Communications Letters. 2024. [<a href="#">PDF</a>]</span></li>
-      <li><span><em><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti.</em><strong> A Generative Approach to Mitigate Jamming Attacks in DOA Estimation. </strong> IEEE Wireless Communications Letters, 2024. [<a href="#">PDF</a>]</span></li>
+      <li><span>Shuai Peng, Baixiao Chen, <b>Saiqin Xu</b>.<strong> Gridless 2D DOA Estimation for Sparse Planar Arrays via 2-level Toeplitz Reconstruction</strong>. Signal Processing, 2025.[<a href="#">PDF</a>]</span></li>
+      <li><span>Simone Soderi, Alessandro Brighente,<b>Saiqin Xu</b>,Mauro Conti.<strong>Multi-RIS Aided VLC Physical Layer Security for 6G Wireless Networks.</strong> IEEE Transactions on Mobile Computing. 2024. [<a href="#">PDF</a>]</span></li>
+      <li><span><b>Saiqin Xu</b>, Shuai Peng, Baixiao Chen, Alessandro Brighente.<strong> Detecting Jamming Signal using 2D Direction of Arrival Estimation Technique.</strong> IEEE Communications Letters. 2024. [<a href="#">PDF</a>]</span></li>
+      <li><span><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti.<strong> A Generative Approach to Mitigate Jamming Attacks in DOA Estimation. </strong> IEEE Wireless Communications Letters, 2024. [<a href="#">PDF</a>]</span></li>
       <li><span>Hao Lian, Minglei Yang, <b>Saiqin Xu</b>, Dingsen Zhou, Meng Liu. <strong> Time Reversal Detection for Moving Targets in Clutter Environments.</strong> Remote Sensing, 2023.[<a href="#">PDF</a>]</span></li>
-      <li><span><em><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti, et al.</em><strong> Deep Neural Networks for Direction of Arrival Estimation of Multiple Targets with Sparse Prior for Line-of-Sight Scenario. </strong>IEEE Transactions on Vehicular Technology, 2023. [<a href="#">PDF</a>]</span></li>
-      <li><span><em><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti, et al.</em><strong> A Low Computational Complexity DOA Estimation using Sum/Difference Pattern based on DNN. </strong>Multidimensional Systems and Signal Processing, 2023. [<a href="#">PDF</a>]</span></li>
-      <li><span><em><b> Saiqin Xu</b>,Baixiao Chen, Houhong Xiang. </em><strong>Direction of Arrival Estimation using Estimator Banks in Low angle Tracking for S band Radar. </strong>Microwave and Optical Technology Letters, 2021. [<a href="#">PDF</a>]</span></li>
-      <li><span><em> Houhong Xiang, Baixiao Chen, Minglei Yang, <b> Saiqin Xu</b>, Zhengjie Li. </em><strong> Improved direction-of-arrival estimation method based on LSTM neural networks with robustness to array imperfections.</strong> Applied Intelligence, 2021. [<a href="#">PDF</a>]</span></li>
-      <li><span><em> Houhong Xiang, Baixiao Chen, Minglei Yang, <b> Saiqin Xu</b>.</em><strong>  Angle separation learning for coherent DOA estimation with deep sparse prior.</strong> IEEE Communications Letters. [<a href="#">PDF</a>]</span></li>
+      <li><span><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti, et al.<strong> Deep Neural Networks for Direction of Arrival Estimation of Multiple Targets with Sparse Prior for Line-of-Sight Scenario. </strong>IEEE Transactions on Vehicular Technology, 2023. [<a href="#">PDF</a>]</span></li>
+      <li><span><b> Saiqin Xu</b>,Alessandro Brighente, Baixiao Chen, Mauro Conti, et al.<strong> A Low Computational Complexity DOA Estimation using Sum/Difference Pattern based on DNN. </strong>Multidimensional Systems and Signal Processing, 2023. [<a href="#">PDF</a>]</span></li>
+      <li><span><b> Saiqin Xu</b>,Baixiao Chen, Houhong Xiang. </em><strong>Direction of Arrival Estimation using Estimator Banks in Low angle Tracking for S band Radar. </strong>Microwave and Optical Technology Letters, 2021. [<a href="#">PDF</a>]</span></li>
+      <li><span> Houhong Xiang, Baixiao Chen, Minglei Yang, <b> Saiqin Xu</b>, Zhengjie Li. <strong> Improved direction-of-arrival estimation method based on LSTM neural networks with robustness to array imperfections.</strong> Applied Intelligence, 2021. [<a href="#">PDF</a>]</span></li>
+      <li><span>Houhong Xiang, Baixiao Chen, Minglei Yang, <b> Saiqin Xu</b>.<strong>  Angle separation learning for coherent DOA estimation with deep sparse prior.</strong> IEEE Communications Letters. [<a href="#">PDF</a>]</span></li>
     </ol>
 
 
 
     <h3>Conference Papers</h3>
     <ol class="reversed-brackets" id="conference-list">
-      <li><span><em> <b> Saiqin Xu</b>, Baixiao Chen, Jiankang Chen, Yu Chen. </em><strong>Enhanced Two-Dimensional Direction of Arrival Estimation via Extended Connection Matrix.</strong> 2025 8th International Conference on Electronics Technology (ICET), Chengdu, China, 2025. </span></li>
-      <li><span><em>Alessandro Brighente,<b> Saiqin Xu</b>, Simone Soderi, Mauro Conti.</em><strong>Physical Layer Authentication for Distributed RIS (DRIS) Enabled VLC Systems. </strong>IEEE International Conference on Communications(ICC). Denver, Co, USA, 2024.</span> </li>
-      <li><span><em> Zheming Guo, Baixiao Chen, <b> Saiqin Xu</b>, Hao Lian. </em><strong>A modified genetic algorithm based on the monarch scheme for thinned planar array synthesis.</strong> 2023 IET International Radar Conference (IRC), Chongqing, China, 2023.</span></li>
-      <li><span><em><b> Saiqin Xu</b>, Baixiao Chen, Hao Lian, Zheming Guo. </em><strong>Deep Learning based Direction of Arrival Estimation of Multiple Targets.</strong> 2022 IEEE 5th International Conference on Electronic Information and Communication Technology (ICEIC), Hefei, China, 2022.</span> </li>
-      <li><span><em><b> Saiqin Xu</b>, Baixiao Chen, Xiaoying Chen, Houhong Xiang.</em><strong> A Beamspace Dimension Reduction Technique with Application to DOA Estimation in Low-angle Tracking.</strong> 2021 CIE International Conference on Radar (CIE Radar), Haikou, China, 2021. </span></li>
+      <li><span> <b> Saiqin Xu</b>, Baixiao Chen, Jiankang Chen, Yu Chen. <strong>Enhanced Two-Dimensional Direction of Arrival Estimation via Extended Connection Matrix.</strong> 2025 8th International Conference on Electronics Technology (ICET), Chengdu, China, 2025. </span></li>
+      <li><span>Alessandro Brighente,<b> Saiqin Xu</b>, Simone Soderi, Mauro Conti.<strong>Physical Layer Authentication for Distributed RIS (DRIS) Enabled VLC Systems. </strong>IEEE International Conference on Communications(ICC). Denver, Co, USA, 2024.</span> </li>
+      <li><span> Zheming Guo, Baixiao Chen, <b> Saiqin Xu</b>, Hao Lian. <strong>A modified genetic algorithm based on the monarch scheme for thinned planar array synthesis.</strong> 2023 IET International Radar Conference (IRC), Chongqing, China, 2023.</span></li>
+      <li><span><b> Saiqin Xu</b>, Baixiao Chen, Hao Lian, Zheming Guo. <strong>Deep Learning based Direction of Arrival Estimation of Multiple Targets.</strong> 2022 IEEE 5th International Conference on Electronic Information and Communication Technology (ICEIC), Hefei, China, 2022.</span> </li>
+      <li><span><b> Saiqin Xu</b>, Baixiao Chen, Xiaoying Chen, Houhong Xiang.<strong> A Beamspace Dimension Reduction Technique with Application to DOA Estimation in Low-angle Tracking.</strong> 2021 CIE International Conference on Radar (CIE Radar), Haikou, China, 2021. </span></li>
     </ol>
 
     <h2 id="projects">Projects</h2>
@@ -173,7 +176,7 @@
         const total = items.length;
         items.forEach((item, index) => {
           const num = total - index;
-          item.innerHTML = `[${num}] ` + item.innerHTML;
+          item.setAttribute("data-number", `[${num}]`);
         });
       }
       applyReversedBrackets('journal-list');
